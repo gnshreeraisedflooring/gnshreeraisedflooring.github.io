@@ -2,124 +2,87 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>G.N Shree Raised Flooring | Supplier & Installer in Ahmedabad</title>
-
+<title>G.N Shree Raised Flooring | Access Floor Supplier & Installer Ahmedabad</title>
+<meta name="description" content="G.N Shree Raised Flooring - Expert supplier & installer of raised access floors in Ahmedabad, Gujarat, and across India. Specializing in Data Centers & Offices.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="G.N Shree Raised Flooring is a leading supplier, installer and dealer of raised access flooring systems in Ahmedabad, India.">
-<meta name="keywords" content="Raised Flooring Ahmedabad, Access Flooring, Data Center Flooring, Anti Static Flooring">
-<meta name="robots" content="index, follow">
 
 <style>
+/* CORE STYLE */
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#333;line-height:1.6; scroll-behavior: smooth;}
+body{margin:0;font-family:'Segoe UI', Arial, sans-serif;color:#333;line-height:1.6; scroll-behavior: smooth; background: #fcfcfc; overflow-x: hidden;}
 
-/* HEADER */
+/* HEADER & NAVIGATION */
 header{background:#1f3c88;color:#fff;padding:18px 30px;position: sticky;top: 0;z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.2);}
 header h1{margin:0;font-size:24px; text-transform: uppercase;}
 header p{margin:5px 0 0;font-size:13px; opacity: 0.9;}
 nav{margin-top:12px}
-nav a{color:#fff;margin-right:15px;text-decoration:none;font-weight:bold;font-size: 14px;}
+nav a{color:#fff;margin-right:15px;text-decoration:none;font-weight:bold;font-size: 14px; transition: 0.3s;}
 nav a:hover{color: #ffcc00;}
 
-/* SLIDER */
-.slider{position:relative;height:450px;overflow:hidden}
+/* SLIDER SECTION */
+.slider{position:relative;height:450px;overflow:hidden; background: #ddd;}
 .slide{position:absolute;inset:0;opacity:0;transition:opacity 1s}
 .slide.active{opacity:1}
 .slide img{width:100%;height:100%;object-fit:cover}
-.slide-content{
-  position:absolute;top:50%;left:50%;
-  transform:translate(-50%,-50%);
-  background:rgba(0,0,0,.7);
-  color:#fff;padding:30px;
-  border-radius:10px;text-align:center;width: 85%; max-width: 600px;
-}
-.slide-content h2{margin:0 0 10px;font-size:32px}
-.slide-content p{margin:0;font-size:18px}
+.slide-content{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,.7);color:#fff;padding:30px;border-radius:10px;text-align:center;width: 85%; max-width: 600px;}
 
 /* SECTION COMMON */
 .section{padding:70px 20px;max-width:1150px;margin:auto}
 .title{text-align:center;font-size:32px;color:#1f3c88;margin-bottom:10px;text-transform: uppercase; font-weight: 800;}
 .underline{width: 70px; height: 5px; background: #ffcc00; margin: 0 auto 40px;}
 
-/* PRODUCT & BLOG CARDS */
-.cards{
- display:grid;
- grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
- gap:25px
-}
-.card{
- background:#fff;
- border:1px solid #eee;
- padding:30px;border-radius:12px;
- transition:0.3s;
- box-shadow: 0 5px 15px rgba(0,0,0,0.05);
- position: relative;
- overflow: hidden;
-}
-.card:hover{transform:translateY(-10px); border-color: #1f3c88; box-shadow: 0 8px 25px rgba(0,0,0,0.1);}
-.card h3{margin-top:0;color:#1f3c88;font-size:20px; margin-bottom: 15px;}
-.card p{font-size: 15px; color: #555;}
+/* PRODUCT CARDS */
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}
+.p-card{background:#fff; border:1px solid #eee; border-radius:12px; overflow:hidden; transition:0.3s; display:flex; flex-direction:column; box-shadow: 0 4px 12px rgba(0,0,0,0.05);}
+.p-card:hover{transform:translateY(-10px); border-color: #1f3c88;}
+.p-img-box{width:100%; height:220px; background:#f9f9f9; display:flex; align-items:center; justify-content:center; border-bottom:1px solid #eee;}
+.p-img-box img{max-width:85%; max-height:85%; object-fit:contain;}
+.p-info{padding:25px; text-align:center; flex-grow:1; display:flex; flex-direction:column; justify-content:space-between;}
+.p-info h3{margin:0 0 12px; color:#1f3c88; font-size:20px;}
+.p-info p{font-size:14px; color:#666; margin-bottom: 20px;}
 
-/* BLOG SPECIFIC STYLE */
-.blog-card{border-top: 5px solid #1f3c88;}
-.date { color: #888; font-size: 12px; display: block; margin-bottom: 8px; }
-.read-more { color: #1f3c88; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 15px; border-bottom: 2px solid transparent; transition: 0.3s;}
-.read-more:hover { border-bottom: 2px solid #1f3c88;}
+/* BUTTONS */
+.btn-blue{background:#1f3c88; color:#fff; padding:12px 20px; text-decoration:none; border-radius:5px; font-weight:bold; display:inline-block; transition: 0.3s; font-size: 14px;}
+.btn-blue:hover{background:#ffcc00; color:#1f3c88;}
 
-/* GALLERY */
-.gallery{
- display:grid;
- grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
- gap:15px;margin-top:20px
+/* --- ORIGINAL ANIMATION SYSTEM (UNCHANGED) --- */
+.reveal {
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.gallery img{
- width:100%;height:200px;
- object-fit:cover;border-radius:8px;
- border:1px solid #ddd;
- transition:0.4s
-}
-.gallery img:hover{transform:scale(1.03); filter: brightness(1.1);}
-
-/* CONTACT FORM */
-.contact-box{
- background:#f4f7ff;
- padding:40px;border-radius:15px;
- max-width:750px;margin:auto;
- border: 1px solid #d1d9ff;
-}
-.contact-box input, .contact-box textarea{
- width:100%;padding:14px;
- margin:10px 0;border-radius:8px;
- border:1px solid #ccc; font-size: 16px;
-}
-.contact-box button{
- background:#1f3c88;color:#fff;
- padding:15px;
- border:none;border-radius:8px;
- cursor:pointer; font-weight: bold; width: 100%; font-size: 18px; transition: 0.3s;
-}
-.contact-box button:hover{background: #152a61;}
-
-/* WHATSAPP */
-.whatsapp-btn{
- position:fixed;bottom:25px;right:25px;
- background:#25D366;color:#fff;
- padding:15px 25px;border-radius:50px;
- text-decoration:none;font-weight:bold;
- box-shadow: 0 5px 15px rgba(0,0,0,0.3);
- z-index: 9999;
- display: flex; align-items: center; gap: 10px;
+.reveal-up { transform: translateY(80px); }
+.reveal-pop { transform: scale(0.5); }
+.active-reveal {
+  opacity: 1;
+  transform: translate(0) scale(1);
 }
 
-/* FOOTER */
+/* BLOG/RESOURCES SECTION */
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:25px}
+.blog-card{background:#fff; border-top: 5px solid #1f3c88; padding:30px; border-radius:8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.3s;}
+.blog-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+.blog-link{color:#1f3c88; font-weight:bold; text-decoration:none; display:inline-block; margin-top:15px;}
+
+/* GALLERY & POPUP */
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px;}
+.gallery img{width:100%; height:200px; object-fit:cover; border-radius:8px; border: 1px solid #ddd; cursor: pointer; transition: 0.3s;}
+.gallery img:hover{filter: brightness(0.85); transform: scale(1.02);}
+
+.modal {display: none; position: fixed; z-index: 2000; padding-top: 50px; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.9);}
+.modal-content {margin: auto; display: block; max-width: 90%; max-height: 80vh; border: 4px solid #fff; animation: zoomIn 0.3s;}
+@keyframes zoomIn { from {transform: scale(0.5); opacity: 0;} to {transform: scale(1); opacity: 1;} }
+.close {position: absolute; top: 20px; right: 35px; color: #fff; font-size: 60px; font-weight: bold; cursor: pointer;}
+
+/* CONTACT BOX */
+.contact-box{background:#f4f7ff; padding:40px; border-radius:15px; max-width:750px; margin:auto; border: 1px solid #d1d9ff;}
+.contact-box input, .contact-box textarea{width:100%; padding:14px; margin:10px 0; border-radius:8px; border:1px solid #ccc;}
+.contact-box button{background:#1f3c88; color:#fff; padding:16px; border:none; border-radius:8px; cursor:pointer; font-weight: bold; width: 100%; font-size: 18px;}
+
+/* FOOTER & WHATSAPP */
+.whatsapp-btn{position:fixed;bottom:25px;right:25px;background:#25D366;color:#fff;padding:15px 25px;border-radius:50px;text-decoration:none;font-weight:bold;z-index: 9999; box-shadow: 0 4px 12px rgba(0,0,0,0.2);}
 footer{background:#111; color: #fff; text-align:center; padding:40px 20px;}
 
-/* RESPONSIVE */
-@media(max-width:768px){
- .slider{height:320px}
- .slide-content h2{font-size:24px}
- .title{font-size: 26px;}
-}
+@media(max-width:768px){.slider{height:320px}}
 </style>
 </head>
 
@@ -127,157 +90,157 @@ footer{background:#111; color: #fff; text-align:center; padding:40px 20px;}
 
 <header>
   <div style="display:flex;align-items:center;gap:15px;flex-wrap:wrap; max-width: 1150px; margin: auto;">
-    <img src="images/logo.png" alt="G.N Shree Logo" style="height:55px; background: #fff; border-radius: 5px; padding: 2px;">
+    <img src="images/logo.png" alt="G.N Shree Raised Flooring Logo" style="height:55px; background:#fff; border-radius:5px;">
     <div>
-        <h1>G.N SHREE RAISED FLOORING</h1>
-        <p>Leading Supplier & Installer in Ahmedabad, Gujarat</p>
+      <h1>G.N Shree Raised Flooring</h1>
+      <p>Pan India Supply & Installation | Specialists in Gujarat & Ahmedabad</p>
     </div>
   </div>
   <nav style="max-width: 1150px; margin: 12px auto 0;">
     <a href="#products">Products</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#blog">Blog</a>
     <a href="#about">About</a>
+    <a href="#blog">Resources</a>
+    <a href="#gallery">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <section class="slider">
   <div class="slide active">
-    <img src="images/banner1.jpg" alt="Raised Flooring Ahmedabad">
-    <div class="slide-content">
-      <h2>Advanced Raised Flooring</h2>
-      <p>Best for Data Centers, Server Rooms & Modern Offices</p>
-    </div>
+    <img src="images/banner1.jpg" alt="Raised Floor Installation Ahmedabad">
+    <div class="slide-content"><h2>Precision Flooring Solutions</h2><p>Customized for Data Centers & Offices Across India</p></div>
   </div>
   <div class="slide">
-    <img src="images/banner2.jpg" alt="Installation Services">
-    <div class="slide-content">
-      <h2>Professional Installation</h2>
-      <p>Top-quality finish with expert engineering team</p>
-    </div>
-  </div>
-  <div class="slide">
-    <img src="images/banner3.jpg" alt="High Quality Panels">
-    <div class="slide-content">
-      <h2>Quality You Can Trust</h2>
-      <p>Durable, fire-resistant and high load-bearing panels</p>
-    </div>
+    <img src="images/banner2.jpg" alt="Access Floor Supply Gujarat">
+    <div class="slide-content"><h2>Expert Installation</h2><p>High-quality materials and professional finish</p></div>
   </div>
 </section>
 
 <section id="products" class="section">
   <h2 class="title">Our Products</h2>
   <div class="underline"></div>
-  <div class="cards">
-    <div class="card">
-      <h3>Steel Cementitious Panels</h3>
-      <p>Ideal for data centers and server rooms. These panels offer heavy load-bearing capacity and durability.</p>
-    </div>
-    <div class="card">
-      <h3>Calcium Sulphate Panels</h3>
-      <p>Premium eco-friendly panels. Excellent for fire resistance, acoustic control, and moisture protection.</p>
-    </div>
-    <div class="card">
-      <h3>Woodcore Panels</h3>
-      <p>Lightweight and cost-effective. Best suited for general office areas and commercial workspace cabling.</p>
-    </div>
-    <div class="card">
-      <h3>HPL & Vinyl Finish</h3>
-      <p>Attractive top finishes that provide anti-static properties and easy maintenance for high-traffic areas.</p>
-    </div>
-    <div class="card">
-      <h3>Perforated Panels</h3>
-      <p>Designed for precision cooling. Essential for maintaining airflow in hot/cold aisle data center setups.</p>
-    </div>
-    <div class="card">
-      <h3>Anti-Static Flooring</h3>
-      <p>Specialized flooring solutions to protect your IT hardware and sensitive equipment from static discharge.</p>
-    </div>
+  <div class="cards-grid">
+    <div class="p-card"><div class="p-img-box"><img src="images/products/steel-panel.jpg" alt="Steel Cementitious Floor"></div><div class="p-info"><h3>Steel Cementitious</h3><p>Highest durability with cement in-fill for server rooms.</p><a href="products/steel-cementitious.html" class="btn-blue">Specifications →</a></div></div>
+    <div class="p-card"><div class="p-img-box"><img src="images/products/calcium-panel.jpg" alt="Calcium Sulphate Floor"></div><div class="p-info"><h3>Calcium Sulphate</h3><p>Eco-friendly panels with excellent fire-proofing properties.</p><a href="products/calcium-sulphate.html" class="btn-blue">Specifications →</a></div></div>
+    <div class="p-card"><div class="p-img-box"><img src="images/products/woodcore-panel.jpg" alt="Woodcore Raised Floor"></div><div class="p-info"><h3>Woodcore Panels</h3><p>Lightweight and economical for general office areas.</p><a href="products/woodcore-panels.html" class="btn-blue">Specifications →</a></div></div>
+    <div class="p-card"><div class="p-img-box"><img src="images/products/aluminum-panel.jpg" alt="Aluminum Die-Cast Floor"></div><div class="p-info"><h3>Aluminum Die-Cast</h3><p>Non-magnetic panels for MRI rooms and clean laboratories.</p><a href="products/aluminum-panels.html" class="btn-blue">Specifications →</a></div></div>
+    <div class="p-card"><div class="p-img-box"><img src="images/products/perforated-panel.jpg" alt="Perforated Airflow Panel"></div><div class="p-info"><h3>Perforated Airflow</h3><p>Optimized cooling for hot-aisle data center setups.</p><a href="products/perforated-panels.html" class="btn-blue">Specifications →</a></div></div>
+    <div class="p-card"><div class="p-img-box"><img src="images/products/hpl-finish-panel.jpg" alt="HPL PVC Floor Finish"></div><div class="p-info"><h3>HPL / PVC Finished</h3><p>Anti-static protection for high-end IT infrastructure.</p><a href="products/hpl-vinyl-finish.html" class="btn-blue">Specifications →</a></div></div>
   </div>
 </section>
 
-<section id="blog" class="section" style="background: #fafafa;">
-  <h2 class="title">Knowledge Center</h2>
+<section id="about" class="section" style="background:#f9f9f9;">
+    <h2 class="title">About G.N Shree Raised Flooring</h2>
+    <div class="underline"></div>
+    <div style="text-align: center; max-width: 850px; margin: auto;">
+      <p style="font-size: 18px; color: #444;">
+        <strong>G.N Shree Raised Flooring</strong> is a trusted supplier and installer based in Ahmedabad. We provide end-to-end access flooring solutions for Data Centers, Server Rooms, and Corporate Offices across Gujarat and Pan India. Our team ensures high-quality installation with durable materials.
+      </p>
+    </div>
+</section>
+
+<section id="blog" class="section">
+  <h2 class="title">Resources & Guides</h2>
   <div class="underline"></div>
-  <p style="text-align:center; margin-bottom:30px; color: #666;">Expert tips and guides on raised access flooring systems.</p>
-  
-  <div class="cards">
-    <div class="card blog-card">
-      <span class="date">Jan 15, 2026</span>
-      <h3>Why choose Raised Flooring for your Office?</h3>
-      <p>Discover how raised floors simplify cable management and improve aesthetics in modern workplaces...</p>
-      <a href="blog/office-flooring-guide.html" class="read-more">Read More →</a>
+  <div class="blog-grid">
+    <div class="blog-card reveal reveal-up">
+      <h3>Choosing Right Floor for Data Centers</h3>
+      <p>Ahmedabad ke badhte IT sector ke liye sahi flooring chunna zaroori hai. Janiye Steel vs Calcium Sulphate panels...</p>
+      <a href="blog/choosing-right-access-floor.html" class="blog-link">Read More →</a>
     </div>
-
-    <div class="card blog-card">
-      <span class="date">Jan 10, 2026</span>
+    <div class="blog-card reveal reveal-up">
       <h3>Maintaining Anti-Static Floors</h3>
-      <p>Tips on how to keep your anti-static flooring effective for years to protect your IT equipment...</p>
-      <a href="blog/maintenance-tips.html" class="read-more">Read More →</a>
+      <p>Essential maintenance tips to prevent static discharge in your server room and protect equipment...</p>
+      <a href="blog/anti-static-maintenance.html" class="blog-link">Read More →</a>
+    </div>
+    <div class="blog-card reveal reveal-up">
+      <h3>Raised Flooring in Modern Offices</h3>
+      <p>Gujarat ke corporate offices mein hidden cabling aur airflow ke liye raised flooring ek smart investment hai.</p>
+      <a href="blog/modern-office-flooring.html" class="blog-link">Read More →</a>
     </div>
   </div>
 </section>
-
-<section id="gallery" class="section">
+<section id="gallery" class="section" style="background:#f9f9f9;">
   <h2 class="title">Project Gallery</h2>
   <div class="underline"></div>
   <div class="gallery">
-    <img src="images/products/product1.jpg" alt="Raised Floor Panel">
-    <img src="images/products/product2.jpg" alt="Server Room Project">
-    <img src="images/products/product3.jpg" alt="Flooring Installation">
-    <img src="images/products/product4.jpg" alt="Access Floor Finish">
+    <img src="images/products/product1.jpg" alt="Raised Floor Project" class="reveal reveal-pop" onclick="openModal(this.src)">
+    <img src="images/products/product2.jpg" alt="Raised Floor Project" class="reveal reveal-pop" onclick="openModal(this.src)">
+    <img src="images/products/product3.jpg" alt="Raised Floor Project" class="reveal reveal-pop" onclick="openModal(this.src)">
+    <img src="images/products/product4.jpg" alt="Raised Floor Project" class="reveal reveal-pop" onclick="openModal(this.src)">
   </div>
 </section>
 
-<section id="about" class="section">
-  <h2 class="title">About G.N Shree</h2>
-  <div class="underline"></div>
-  <div style="text-align: center; max-width: 850px; margin: auto;">
-    <p style="font-size: 18px; color: #444;">
-        <b>G.N Shree Raised Flooring</b> is a dedicated provider of raised access flooring systems in Ahmedabad. 
-        We specialize in supplying and installing high-performance flooring for Data Centers, 
-        Server Rooms, Control Rooms, and Modern Corporate Offices. Our mission is to provide 
-        durable, flexible, and cost-effective infrastructure solutions.
-    </p>
-  </div>
-</section>
+<div id="myModal" class="modal"><span class="close" onclick="closeModal()">&times;</span><img class="modal-content" id="img01"></div>
 
-<section id="contact" class="section" style="background: #fff;">
+<section id="contact" class="section">
   <h2 class="title">Get A Free Quote</h2>
   <div class="underline"></div>
   <div class="contact-box">
     <form action="https://formspree.io/f/xbddlpnv" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="tel" name="phone" placeholder="Phone Number / Mobile" required>
-      <textarea name="message" rows="5" placeholder="Tell us about your requirements (Area in sq ft, location, etc.)" required></textarea>
-      <button type="submit">Submit Requirement</button>
+      <input type="text" name="name" placeholder="Name / Company" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <textarea name="message" rows="4" placeholder="Your Requirement" required></textarea>
+      <button type="submit">Send Inquiry</button>
     </form>
-    <div style="text-align:center; margin-top:20px; font-weight: bold; color: #1f3c88;">
-        Email: info@gnshreeraisedflooring.com
+    <div style="margin-top:25px; text-align:center; font-size: 14px; color: #555;">
+        <p><strong>Email:</strong> info@gnshreeraisedflooring.com</p>
+        <p><strong>Address:</strong> Ahmedabad, Gujarat, India - 380001</p>
+        <p><strong>Service Area:</strong> Pan India Installation</p>
     </div>
   </div>
 </section>
 
-<a href="https://wa.me/918369598066?text=Hi, I am interested in your Raised Flooring services. Please share details." target="_blank" class="whatsapp-btn">
-  <span>💬 Chat on WhatsApp</span>
-</a>
-
 <footer>
-  <p style="font-size: 18px; color: #fff; margin-bottom: 10px;">G.N SHREE RAISED FLOORING</p>
-  <p>Plot No. XXX, Industrial Area, Ahmedabad, Gujarat - 380001</p>
-  <p>© 2026 All Rights Reserved. | Designed for Quality.</p>
+  <p style="font-size: 20px; color: #ffcc00; margin-bottom: 5px; font-weight: bold;">G.N Shree Raised Flooring</p>
+  <p>© 2026 All Rights Reserved.</p>
 </footer>
 
+<a href="https://wa.me/918369598066" class="whatsapp-btn">💬 WhatsApp Us</a>
+
 <script>
-// Slider Logic
+// 1. SLIDER
 let slides=document.querySelectorAll('.slide');
 let i=0;
 setInterval(()=>{
   slides[i].classList.remove('active');
   i=(i+1)%slides.length;
   slides[i].classList.add('active');
-},4500);
+},4000);
+
+// 2. POPUP MODAL
+function openModal(src) {
+  document.getElementById("myModal").style.display = "block";
+  document.getElementById("img01").src = src;
+}
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+// 3. ORIGINAL SCROLL REVEAL LOGIC (UNCHANGED)
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 100;
+    if (elementTop < windowHeight - elementVisible) {
+      if(reveals[i].classList.contains('reveal-pop')){
+          let el = reveals[i];
+          setTimeout(() => { el.classList.add("active-reveal"); }, i * 100);
+      } else {
+          reveals[i].classList.add("active-reveal");
+      }
+    }
+  }
+}
+window.addEventListener("scroll", reveal);
+reveal();
+
+window.onclick = function(event) {
+  let modal = document.getElementById("myModal");
+  if (event.target == modal) { modal.style.display = "none"; }
+}
 </script>
 
 </body>
